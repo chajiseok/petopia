@@ -53,6 +53,18 @@
        object-position: top;
        border-radius: 50%;
    }
+   
+	.btn1 {
+	   width: 80px;
+	   font-size:15px;
+	   color: white;
+	   text-align: center;
+	   background: grey;
+	   border: solid 0px grey;
+	   border-radius: 30px;
+	}
+
+
 
 </style>
 
@@ -189,17 +201,94 @@
                </div>
                
                <div class="col-sm-3">
-                  <span style="color: #999;">진료시간(운영시간)</span>
-                  <select class="form-control" style="width: 74%;">
-                  <option selected="selected">평일</option>
-                  <option>월~금(주 5)</option>
-                  <option>월~목(주 4)</option>
-                  <option>월,수,금(주 3)</option>
-                  </select>
+               		<input type="time" class="form-control" style="margin-top: 20px; width: 81%;">
+               </div>
+               <!-- <div class="col-sm-1">ㅡ</div> -->
+               <div class="col-sm-3">
+               		<input type="time" class="form-control" style="margin-top: 20px; width: 81%;">
+               </div>
+               <div class="col-sm-3">
+               <span style="color: #999;">일요일/공휴일</span>
+               		<input type="text" class="form-control" style="width: 150%;">
                </div>
             </div><!-- row -->
             
-            <div class="row tagList1" style="margin-top: 3%;">
+            <div class="row" style="padding-top: 20px;">
+               <div class="col-sm-3">
+                  <span style="color: #999;">점심시간</span>
+                  <input type="time" value="9" class="form-control" style="width: 81%;">
+               </div>
+               
+               <div class="col-sm-3">
+               		<input type="time" value="9" class="form-control" style="margin-top: 20px; width: 81%;">
+               </div>	
+               <div class="col-sm-3">
+               <span style="color: #999;">토요일</span>
+               		<input type="time" class="form-control" style="width: 81%;">
+               </div>
+               <div class="col-sm-3">
+               		<input type="time" value="9" class="form-control" style="margin-top: 20px; width: 81%;">
+               </div>
+            </div><!-- row -->
+            
+            <div class="row" style="padding-top: 20px;">
+               <div class="col-sm-6">
+                  <span style="color: #999;">특이사항</span>
+                  <input type="test" class="form-control" id="birthday" name="birthday"/>
+               </div>
+            </div>
+            
+            <div class="row" style="padding-top: 20px;">
+               <div class="col-sm-6">
+                  <span style="color: #999;">진료/처방 가능 동물군 (다중 선택 가능)</span><br/>
+                  <div style="margin-top: 10px;">
+	                  <button type="button" class="btn1">강d아지</button>
+	                  <button type="button" class="btn1">고양이</button>
+	                  <button type="button" class="btn1">소동물</button>
+	                  <button type="button" class="btn1">기타</button>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="row" style="padding-top: 20px;">
+               <div class="col-sm-3">
+                  <span style="color: #999;">의료진 소개</span><br/>
+                  <span style="color: #999;">(성함 및 직책병기)</span>
+                  <input type="test" class="form-control" id="birthday" name="birthday" style="width: 100%"/>
+               </div>
+                <div style="margin-top: 45px;">
+	                  <button type="button" class="btn1">강아지</button>
+	                  <button type="button" class="btn1">고양이</button>
+	                  <button type="button" class="btn1">소동물</button>
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-3" style="margin-top: 2%;">
+                  <input type="test" class="form-control" id="birthday" name="birthday" style="width: 100%"/>
+               </div >
+                <div style="margin-top: 20px;">
+	                  <button type="button" class="btn1">강아지</button>
+	                  <button type="button" class="btn1">고양이</button>
+	                  <button type="button" class="btn1">소동물</button>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- <div class="row tagList1" style="margin-top: 3%;">
                <div class="col-sm-2">
                   <span style="color: #999;">시설상태</span>
                </div>
@@ -211,7 +300,7 @@
                   <input type="checkbox" class="" id="tag5" name="tag" value="종합병원"/> <label style="color: #999;" for="tag5">#종합병원</label>
                   <input type="checkbox" class="" id="tag6" name="tag" value="편안한"/> <label style="color: #999;" for="tag6">#편안한</label>
                </div>
-            </div><!-- row -->
+            </div>row
             
             <div class="row tagList2" style="margin-top: 3%;">
                <div class="col-sm-2">
@@ -222,11 +311,11 @@
                   <input type="checkbox" class="" id="tag8" name="tag" value="친절한"/> <label style="color: #999;" for="tag8">#세심한</label>
                   <input type="checkbox" class="" id="tag9" name="tag" value="친절한"/> <label style="color: #999;" for="tag9">#잘봐주는</label>
                </div>
-            </div><!-- row --><!-- 이 외의 것은 DB 연결후에 하기!!! -->
+            </div>row --><!-- 이 외의 것은 DB 연결후에 하기!!! -->
             
             <div class="row" align="center" style="margin-top: 3%;">
                <input type="checkbox" class="" id="agree" name="agree"/> <label style="color: #999;" for="agree">서비스 이용 및 약관에 동의합니다.</label>
-            </div><!-- row -->
+            </div>
          </div>
             <hr style="height: 1px; background-color: white; border: none;">
       </form>
