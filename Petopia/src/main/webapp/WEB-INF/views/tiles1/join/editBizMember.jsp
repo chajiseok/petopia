@@ -116,7 +116,7 @@
    <div class="col-sm-offset-2 col-sm-8" style="background-color: #f2f2f2;`">
       
       <div class="col-sm-12" align="center">
-         <h2>기업회원 회원가입</h2>
+         <h2>기업회원수정</h2>
       </div>
       <form name="joinFrm">
          <div class="col-sm-offset-2 col-sm-8 preview-image" style="margin-bottom: 15px;">

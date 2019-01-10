@@ -12,5 +12,17 @@ public class Biz_MemberController {
 		
 		return "join/joinBizMember.tiles1";
 	} // end of public String joinBizMember()
+	
+	@RequestMapping(value="/editBizMember.pet", method={RequestMethod.GET})
+	public String editBizMember() {
+		
+		return "join/editBizMember.tiles1";
+	} // end of public String editBizMember()
+	
+	@RequestMapping(value="/bizDetail.pet", method={RequestMethod.GET})
+	public String bizDetail() {
+		
+		return "join/bizDetail.tiles1";
+	} // end of public String bizDetail()
 
 }
